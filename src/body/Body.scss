@@ -215,7 +215,8 @@
 }
 .donut-chart {
    
-    margin-top: 2rem;
+    margin: 2rem auto 0;
+    
     
 }
 #locations  {
@@ -244,6 +245,7 @@
         margin-top: 0;
         margin-bottom: 2rem;
     }
+    
    
    
 }
@@ -252,6 +254,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    width: 100%;
 }
 
 @media only screen and (min-width:960px) {
@@ -268,7 +271,9 @@
     .red-text {
         margin-top: 0;
     }
-   
+   .donut-chart {
+    margin: 2rem 0;
+   }
 }
 
 //graph 
