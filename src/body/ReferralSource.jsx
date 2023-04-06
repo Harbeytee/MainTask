@@ -2,7 +2,7 @@ import React from 'react'
 import DonutChart from './DonutChart'
 import facebook from '../assets/body/referralSource/facebook.svg'
 import instagram from '../assets/body/referralSource/instagram.svg'
-import linkedin from '../assets/body/referralSource/linkedin.svg'
+import linkedin from '../assets/body/referralSource/linkedIn.svg'
 import google from '../assets/body/referralSource/google.svg'
 
 
