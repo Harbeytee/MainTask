@@ -14,9 +14,7 @@ function App() {
     window.scrollTo({top: 0, left: 0});
 }, [])
 
-useEffect(() => {
-  on? document.body.style.overflow='hidden' : document.body.style.overflow='hidden';
-}, [on])
+
 
 
 
