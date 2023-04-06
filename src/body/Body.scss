@@ -1,0 +1,318 @@
+#body {
+   
+    padding: 0 0.8rem;
+    width: 100%;
+    
+    h2 {
+        background-color: rgba(255, 255, 255);
+        
+        width: 100%;
+        display: block;
+        position: fixed;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: #131316;
+        z-index: 100;
+        font-weight: 700;
+    }
+    h3 {
+       
+        margin-bottom: 0.7rem;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .split {
+       
+        padding-top: 5.5rem;
+
+        p {
+            font-size: 16px;
+            color: #31373D;
+            margin-bottom: 1.3rem;
+            font-weight: 400;
+        }
+    }
+    .days {
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: 600;
+        align-items: center;
+        margin: 1rem 1rem 1.7rem 0;
+        * {
+            font-size: 14px;
+            margin-right: 1rem;
+            margin-top: 0.55rem;
+            cursor: pointer;
+            transition: all 0.2s linear;
+            border-radius: 100px;
+            padding: 0.6rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .split2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1.2rem;
+        margin-bottom: 2rem;
+        
+    }
+}
+
+//header styling
+
+.hamburger {
+    z-index: 10000;
+    margin-top: 1.5rem;
+    right: 16px;
+    position: fixed;
+   
+   
+    * {
+        width: 18px;
+        height: 2px;
+        background-color: #131316;
+        border-radius: 8px;
+        display: block;
+        margin-top: 0.2rem;
+        transition: all 0.3s linear;
+        font-weight: 400;
+        
+        
+    }
+}
+.active {
+    border: 1px solid #FF5403;
+    color: #FF5403;
+    background-color: #FFEEE5;
+
+}
+.inactive {
+    background-color: transparent;
+    border: 1px solid #EFF1F6;
+    color: #31373D
+}
+
+@media only screen and (min-width:960px) {
+   .hamburger {
+    display: none;
+   }
+    #body {
+        margin: 0 0 0 23%;
+        width: 75%;
+        padding-left: 3rem;
+        .split2 {
+            
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    
+        }
+        h2 {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(5px);
+        
+        }
+        h3 {
+           
+            font-size: 28px;
+        }
+        .split {
+    
+        
+            display: flex;
+            
+            justify-content: space-between;
+            align-items: center;
+            p {
+                font-size: 16px;
+                color: #31373D;
+                margin-bottom: 0;
+            }
+        }
+    }
+   
+    
+    
+    .days {
+       
+        * {
+          
+            margin-top: 0;
+           
+        }
+    }
+}
+
+//graph styling 
+.letterI {
+    color: #31373D;
+    border: 1px solid #31373D;
+    border-radius: 100%;
+    height: 18.5px;
+    width: 18.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+}
+#graph {
+    border: 1px solid #f3f4f8;
+    border-radius: 10px;
+    padding: 2rem 1.5rem;
+    h4 {
+        font-size: 20px;
+        color: #131316;
+        margin-bottom: 0.7rem;
+        font-weight: 700;
+    }
+    .small-text {
+        font-size: 16px;
+        color: #4D5760;
+    }
+    .all-time {
+        font-size: 44px;
+        color: #131316;
+        font-weight: 600;
+        margin-top: 1.7rem;
+        margin-bottom: 1.4rem;
+    }
+}
+@media only screen and (min-width:960px) {
+    #graph {
+        border: 1px solid #f3f4f8;
+        border-radius: 10px;
+        padding: 2rem 1.5rem;
+       
+        .all-time {
+            font-size: 48px;
+            
+           
+        }
+       
+    }
+   
+}
+
+//location styling 
+.red-text {
+    color: #FF5403;
+    font-size: 15px;
+    margin-top: 1.5rem;
+    font-weight: 400;
+    
+}
+.percent {
+    margin-left: 0.5rem;
+    font-weight: 700;
+}
+.donut-chart {
+   
+    margin-top: 2rem;
+    
+}
+#locations  {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    border: 1px solid #f3f4f8;
+    border-radius: 10px;
+    padding: 1.5rem 1.3rem;
+
+    .social-icon, .country-icon {
+        margin-right: 0.5rem;
+    }
+    .country-icon {
+        width: 20px;
+    }
+    .data > div{
+        margin-top: 0.95rem;
+        text-transform: capitalize;
+    }
+    h4 {
+        font-weight: 700;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+   
+   
+}
+
+.donut-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+@media only screen and (min-width:960px) {
+    
+    #locations  {
+        
+        flex-direction: row;
+       
+       
+    }
+    .donut-box {
+        align-items: flex-end;
+    }
+    .red-text {
+        margin-top: 0;
+    }
+   
+}
+
+//graph 
+
+
+@media only screen and (min-width:960px) {
+    .chart {
+        display: block;
+        width: 200px;
+        height: 200px;
+        border-left: 1px solid;
+        border-bottom: 1px solid;
+        
+    }
+    .data-point {
+        background-color: #FF5403;
+        border: 2px solid lightblue;
+        border-radius: 50%;
+        height: 12px;
+        position: absolute;
+        width: 12px;
+    }
+    .line-chart{
+        list-style: none;
+    }
+    .graph-container {
+        margin-top: 1.9rem;
+        margin-bottom: 2rem;
+       
+    }
+    .graph-numbers {
+        width: 100%;
+        height: calc(100%);
+        display: block;
+        //: 1px solid red;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        * {
+            font-size: 18px;
+            margin-bottom: 2.5rem;
+        }
+    }
+    .graph-container {
+        position: relative;
+    }
+}
