@@ -16,7 +16,7 @@ import user from '../assets/navbar/user.svg'
 export default function Navbar({on}) {
    
   return (
-    <nav style={{transform: on ? 'translateY(0)' : 'translateY(-100%)'}} id='navbar'>
+    <nav style={{transform: on ? 'translateX(0)' : 'translateX(-100%)'}} id='navbar'>
         <img src={logo} alt="mainstack logo, blocks joined together to form an m shape" className="mainstack-logo" />
 
         <span style={{color: '#FF5403'}}>
