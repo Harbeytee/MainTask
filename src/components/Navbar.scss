@@ -13,6 +13,8 @@
     width: 100%;
     padding-top: 1.5rem;
     height: 100%;
+    z-index: 10000;
+   
 
     * {
         color: #4D5760;
@@ -29,7 +31,7 @@
         align-items: center;
     }
     .user {
-        margin: 7rem 0;
+        margin: 7rem 1rem 7rem 0;
     }
     .icon {
         width: 25px;
@@ -80,7 +82,9 @@
         transform: translateY(0);
        
         height: 100vh;
-        
+        .user {
+            margin: 7rem 0rem 7rem 0;
+        }
        
         span, h5 {
             padding-left: 4rem;
