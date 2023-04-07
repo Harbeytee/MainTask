@@ -15,7 +15,7 @@ export default function ReferralSource({data}) {
     }
     const socials = {facebook: facebook, instagram: instagram, linkedin: linkedin, google: google}
     const countries = data.top_sources?.map((item, i) =>(
-       //console.log(socials.map(Object.keys(val).toString() == item.source ? val : ''))),
+       
         <div style={style} key={i}>
             <img className='social-icon' src={socials[item.source.toLowerCase()]} alt={`${item.source} icon`} />
             {item.source} 

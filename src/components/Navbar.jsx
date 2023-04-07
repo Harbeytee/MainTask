@@ -11,25 +11,22 @@ import item6 from '../assets/navbar/item6.svg'
 import item7 from '../assets/navbar/item7.svg'
 import item8 from '../assets/navbar/item8.svg'
 import user from '../assets/navbar/user.svg'
-import { useEffect } from 'react'
+
 
 export default function Navbar({on}) {
-   //gray #4D5760
-   //orange #FF5403
+   
   return (
     <nav style={{transform: on ? 'translateY(0)' : 'translateY(-100%)'}} id='navbar'>
         <img src={logo} alt="mainstack logo, blocks joined together to form an m shape" className="mainstack-logo" />
 
         <span style={{color: '#FF5403'}}>
             <img src={dashboard} alt="" className="icon" />
-            {/* <Dashboard className='icon'/> */}
             Dashboard
         </span>
         
 
         <span>
             <img src={item1} alt="" className="icon" />
-            {/* <Item1 className='icon'/> */}
             Item 1
         </span>
 
