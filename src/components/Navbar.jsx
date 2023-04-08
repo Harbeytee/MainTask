@@ -19,7 +19,7 @@ export default function Navbar({on}) {
     <nav style={{transform: on ? 'translateX(0)' : 'translateX(-100%)'}} id='navbar'>
         <img src={logo} alt="mainstack logo, blocks joined together to form an m shape" className="mainstack-logo" />
 
-        <span style={{color: '#FF5403'}}>
+        <span style={{color: '#FF5403', borderLeft: '2px solid #FF5403', borderRadius: '2px'}}>
             <img src={dashboard} alt="" className="icon" />
             Dashboard
         </span>
